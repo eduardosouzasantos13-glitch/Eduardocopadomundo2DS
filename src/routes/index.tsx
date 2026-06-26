@@ -91,7 +91,7 @@ function StatsSection() {
 function CupsSection() {
   return (
     <section id="cups" className="mx-auto max-w-6xl px-4 py-20">
-      <SectionHeader eyebrow="22 Edições" title="TODAS AS COPAS" sub="Cada Copa do Mundo, seu campeão, seu vice e a história que ficou." />
+      <SectionHeader eyebrow="22 Edições" title="TODAS as copas do mundo" sub="Cada Copa do Mundo, seu campeão, seu vice e a história que ficou." />
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {worldCups.map((cup) => (
           <article key={cup.year} className="card-trophy card-trophy-hover rounded-2xl p-6 flex flex-col">
