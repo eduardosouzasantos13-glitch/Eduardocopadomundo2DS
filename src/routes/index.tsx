@@ -5,9 +5,9 @@ import { Quiz, StatsGrid } from "@/components/Quiz";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Copa do Mundo FIFA — Da Primeira (1930) à Última (2022) | História Completa" },
-      { name: "description", content: "História completa das Copas do Mundo FIFA de 1930 a 2022. Conheça todos os campeões, vice-campeões, sedes, placares e curiosidades das 22 edições." },
-      { property: "og:title", content: "Copa do Mundo FIFA — História Completa de 1930 a 2022" },
+      { title: "Copa do Mundo FIFA — Da Primeira (1930) à Última (2026) | História Completa" },
+      { name: "description", content: "História completa das Copas do Mundo FIFA de 1930 a 2026. Conheça todos os campeões, vice-campeões, sedes, placares e curiosidades das 23 edições." },
+      { property: "og:title", content: "Copa do Mundo FIFA — História Completa de 1930 a 2026" },
       { property: "og:description", content: "Todos os campeões e vice-campeões das Copas do Mundo. Estatísticas, curiosidades e quiz interativo." },
     ],
   }),
@@ -58,14 +58,14 @@ function Hero() {
       }} />
       <div className="mx-auto max-w-5xl text-center">
         <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary mb-6">
-          <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" /> 1930 — 2022
+          <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" /> 1930 — 2026
         </div>
         <h1 className="font-display text-6xl sm:text-8xl md:text-9xl leading-none">
           <span className="block text-foreground">A HISTÓRIA DA</span>
           <span className="block text-gradient-gold">COPA DO MUNDO</span>
         </h1>
         <p className="mt-8 mx-auto max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          Da primeira edição no Uruguai à consagração de Messi no Catar. Mergulhe em 92 anos de craques,
+          Da primeira edição no Uruguai ao bicampeonato da Espanha em 2026. Mergulhe em 96 anos de craques,
           gols históricos e os heróis que levantaram a taça mais cobiçada do planeta.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-3">
@@ -92,7 +92,7 @@ function StatsSection() {
 function CupsSection() {
   return (
     <section id="cups" className="mx-auto max-w-6xl px-4 py-20">
-      <SectionHeader eyebrow="22 Edições" title="TODAS as copas do mundo" sub="Cada Copa do Mundo, seu campeão, seu vice e a história que ficou." />
+      <SectionHeader eyebrow="23 Edições" title="TODAS as copas do mundo" sub="Cada Copa do Mundo, seu campeão, seu vice e a história que ficou." />
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {worldCups.map((cup) => (
           <article key={cup.year} className="card-trophy card-trophy-hover rounded-2xl p-6 flex flex-col">
@@ -163,7 +163,7 @@ function RankingSection() {
 function QuizSection() {
   return (
     <section id="quiz" className="mx-auto max-w-3xl px-4 py-20">
-      <SectionHeader eyebrow="Interativo" title="QUIZ DA COPA" sub="6 perguntas para descobrir o quanto você sabe." />
+      <SectionHeader eyebrow="Interativo" title="QUIZ DA COPA" sub="7 perguntas para descobrir o quanto você sabe." />
       <Quiz />
     </section>
   );
@@ -184,8 +184,8 @@ function Footer() {
     <footer className="border-t border-border mt-20 py-10 px-4">
       <div className="mx-auto max-w-6xl text-center text-sm text-muted-foreground">
         <div className="font-display text-2xl text-gradient-gold mb-2">COPA HISTÓRICA</div>
-        <p>Um tributo aos 92 anos de Copa do Mundo FIFA. ⚽🏆</p>
-        <p className="mt-2 text-xs">Dados de 1930 a 2022 · Feito com paixão pelo futebol</p>
+        <p>Um tributo aos 96 anos de Copa do Mundo FIFA. ⚽🏆</p>
+        <p className="mt-2 text-xs">Dados de 1930 a 2026 · Feito com paixão pelo futebol</p>
       </div>
     </footer>
   );
