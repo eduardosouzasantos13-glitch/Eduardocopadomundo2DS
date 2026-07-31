@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { worldCups, titleCount } from "@/data/worldCups";
+import { tech2026 } from "@/data/tech2026";
 import { Quiz, StatsGrid } from "@/components/Quiz";
 
 export const Route = createFileRoute("/")({
@@ -23,6 +24,7 @@ function Home() {
         <StatsSection />
         <CupsSection />
         <RankingSection />
+        <TechSection />
         <QuizSection />
       </main>
       <Footer />
@@ -41,6 +43,7 @@ function Header() {
         <nav className="hidden sm:flex items-center gap-6 text-sm font-medium text-muted-foreground">
           <a href="#cups" className="hover:text-primary transition">Edições</a>
           <a href="#ranking" className="hover:text-primary transition">Ranking</a>
+          <a href="#tecnologia" className="hover:text-primary transition">Tecnologia</a>
           <a href="#quiz" className="hover:text-primary transition">Quiz</a>
           <Link to="/ia" className="hover:text-primary transition">Como a IA Aprende</Link>
         </nav>
@@ -154,6 +157,27 @@ function RankingSection() {
               ))}
             </div>
           </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function TechSection() {
+  return (
+    <section id="tecnologia" className="mx-auto max-w-6xl px-4 py-20">
+      <SectionHeader
+        eyebrow="Copa 2026"
+        title="TECNOLOGIA EM CAMPO"
+        sub="Da bola com chip à inteligência artificial: as inovações que marcaram a Copa de 2026."
+      />
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {tech2026.map((tech) => (
+          <article key={tech.title} className="card-trophy card-trophy-hover rounded-2xl p-6">
+            <div className="text-4xl mb-3">{tech.icon}</div>
+            <h3 className="font-display text-2xl text-primary mb-2">{tech.title}</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">{tech.description}</p>
+          </article>
         ))}
       </div>
     </section>
