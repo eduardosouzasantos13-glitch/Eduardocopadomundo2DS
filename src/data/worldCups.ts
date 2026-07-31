@@ -34,6 +34,7 @@ export const worldCups: WorldCup[] = [
   { year: 2014, host: "Brasil", hostFlag: "🇧🇷", champion: "Alemanha", championFlag: "🇩🇪", runnerUp: "Argentina", runnerUpFlag: "🇦🇷", score: "1 x 0", venue: "Maracanã, Rio de Janeiro", fact: "Tetra alemão. O 7 a 1 contra o Brasil entrou para a história." },
   { year: 2018, host: "Rússia", hostFlag: "🇷🇺", champion: "França", championFlag: "🇫🇷", runnerUp: "Croácia", runnerUpFlag: "🇭🇷", score: "4 x 2", venue: "Moscou", fact: "Bi francês com geração de Mbappé, Griezmann e Pogba." },
   { year: 2022, host: "Catar", hostFlag: "🇶🇦", champion: "Argentina", championFlag: "🇦🇷", runnerUp: "França", runnerUpFlag: "🇫🇷", score: "3 x 3 (4x2 pên.)", venue: "Lusail", fact: "A consagração de Messi. A final considerada a melhor da história das Copas." },
+  { year: 2026, host: "EUA, Canadá e México", hostFlag: "🇺🇸🇨🇦🇲🇽", champion: "Espanha", championFlag: "🇪🇸", runnerUp: "Argentina", runnerUpFlag: "🇦🇷", score: "1 x 0 (pror.)", venue: "MetLife Stadium, Nova Jersey", fact: "Bicampeonato espanhol. Ferran Torres marcou aos 106' da prorrogação contra a Argentina de Messi, na primeira Copa com 48 seleções e 3 países-sede." },
 ];
 
 export const titleCount = [
@@ -43,6 +44,6 @@ export const titleCount = [
   { country: "Argentina", flag: "🇦🇷", titles: 3, years: "1978, 1986, 2022" },
   { country: "França", flag: "🇫🇷", titles: 2, years: "1998, 2018" },
   { country: "Uruguai", flag: "🇺🇾", titles: 2, years: "1930, 1950" },
+  { country: "Espanha", flag: "🇪🇸", titles: 2, years: "2010, 2026" },
   { country: "Inglaterra", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿", titles: 1, years: "1966" },
-  { country: "Espanha", flag: "🇪🇸", titles: 1, years: "2010" },
 ];
