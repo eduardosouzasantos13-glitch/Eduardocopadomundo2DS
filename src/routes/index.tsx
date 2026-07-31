@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { worldCups, titleCount } from "@/data/worldCups";
 import { Quiz, StatsGrid } from "@/components/Quiz";
 
