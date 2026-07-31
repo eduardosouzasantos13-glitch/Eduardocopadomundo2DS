@@ -14,6 +14,7 @@ const questions: Question[] = [
   { q: "Quem foi o campeão da Copa de 2022, no Catar?", options: ["França", "Brasil", "Argentina", "Croácia"], answer: 2 },
   { q: "Em que Copa Pelé estreou aos 17 anos?", options: ["1954", "1958", "1962", "1966"], answer: 1 },
   { q: "Qual a única Copa vencida pela Inglaterra?", options: ["1962", "1966", "1970", "1974"], answer: 1 },
+  { q: "Quem venceu a Copa de 2026, nos EUA, Canadá e México?", options: ["Argentina", "Espanha", "Brasil", "França"], answer: 1 },
 ];
 
 export function Quiz() {
@@ -103,10 +104,10 @@ export function Quiz() {
 export function StatsGrid() {
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <Stat value="22" label="Edições" />
-      <Stat value="92" label="Anos de história" />
+      <Stat value="23" label="Edições" />
+      <Stat value="96" label="Anos de história" />
       <Stat value="8" label="Seleções campeãs" />
-      <Stat value="17" label="Países-sede" />
+      <Stat value="18" label="Países-sede" />
     </div>
   );
 }
