@@ -42,6 +42,7 @@ function Header() {
           <a href="#cups" className="hover:text-primary transition">Edições</a>
           <a href="#ranking" className="hover:text-primary transition">Ranking</a>
           <a href="#quiz" className="hover:text-primary transition">Quiz</a>
+          <Link to="/ia" className="hover:text-primary transition">Como a IA Aprende</Link>
         </nav>
       </div>
     </header>
